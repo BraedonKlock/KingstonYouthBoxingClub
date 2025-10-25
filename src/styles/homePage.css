@@ -1,0 +1,39 @@
+@media (max-width: 800px) {
+    #homePage-section {
+        width: 100%;
+        min-height: 100dvh;           /* use dynamic vh for mobile */
+        min-height: 100vh;            /* fallback */
+        display: flex;
+    
+        background-image: url("/images/homePageBackgroundMobile.png"); /* served from /public */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #joinNowLink {
+        color: white;
+        border: 1rem;
+        background-color: rgba(169, 32, 17);
+        padding: 2vh 2vw 2vh 2vw;
+        border-radius: .5rem;
+        text-decoration: none;
+        position: absolute;
+        font-size: 10vw;
+        top: 67vh;
+        left: 10vw;
+    }
+}
+
+@media (min-width: 801px) {
+    #homePage-section {
+        width: 100%;
+        min-height: 100dvh;           /* use dynamic vh for mobile */
+        min-height: 100vh;            /* fallback */
+        display: flex;
+    
+        background-image: url("/images/homeBackground.png"); /* served from /public */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}

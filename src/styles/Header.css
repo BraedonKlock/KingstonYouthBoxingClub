@@ -1,0 +1,43 @@
+@media (max-width: 800px) {
+    header {
+        position: fixed;
+        background-color: opaque;
+        width: 100%;
+        color: white;
+    }
+    #hamburgerMenu {
+        left: 1vw;
+        top: 1vw;
+        background: none;
+        border: none;
+        color: white;
+        font-size: xx-large;
+    }
+    .nav {
+        position: absolute;            /* overlay below header, not pushing content */
+        top: 100%;                     /* sit just under the header */
+        left: 2.5vw;
+        display: none;
+        flex-direction: column;
+        gap: 3vh;
+        padding-top: 2vh;
+    }
+    .nav.open {
+        display: flex;
+    }
+    .link {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+@media (min-width: 801px) {
+    #hamburgerMenu {
+        display: none;
+    }
+    header {
+        background-color: black;
+        width: 100%;
+        color: white;
+    }
+}
